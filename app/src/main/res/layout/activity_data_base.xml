@@ -9,18 +9,17 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.kakao.firebaseapplication.MainActivity">
-
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="email"
-        android:id="@+id/emailButton"/>
+    tools:context="com.kakao.firebaseapplication.DataBaseActivity">
 
     <Button
+        android:id="@+id/readButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="database"
-        android:id="@+id/databaseButton"/>
+        android:text="read"/>
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="save"/>
 </LinearLayout>

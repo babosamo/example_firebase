@@ -6,7 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
 public class MainActivity extends AppCompatActivity implements
-        View.OnClickListener{
+        View.OnClickListener {
 
     private static final String TAG = "MainActivity";
 
@@ -17,14 +17,20 @@ public class MainActivity extends AppCompatActivity implements
         setContentView(R.layout.activity_main);
 
         findViewById(R.id.emailButton).setOnClickListener(this);
+        findViewById(R.id.databaseButton).setOnClickListener(this);
 
     }
 
     @Override
     public void onClick(View view) {
         int id = view.getId();
-        if(id == R.id.emailButton){
-            startActivity(new Intent(this, EmailActivity.class));
+        switch (id) {
+            case R.id.emailButton:
+                startActivity(new Intent(this, EmailActivity.class));
+                break;
+            case R.id.databaseButton:
+                startActivity(new Intent(this, DataBaseActivity.class));
+                break;
         }
     }
 }

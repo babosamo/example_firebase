@@ -6,7 +6,7 @@ android {
 
     defaultConfig {
         applicationId "com.kakao.firebaseapplication"
-        minSdkVersion 23
+        minSdkVersion 19
         targetSdkVersion 24
         versionCode 1
         versionName "1.0"
@@ -26,6 +26,7 @@ dependencies {
 
     compile 'com.google.firebase:firebase-core:9.2.0'
     compile 'com.google.firebase:firebase-auth:9.2.0'
+    compile 'com.google.firebase:firebase-database:9.2.0'
 }
 
 apply plugin: 'com.google.gms.google-services'
