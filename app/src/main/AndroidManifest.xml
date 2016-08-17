@@ -18,6 +18,8 @@
         <activity android:name=".EmailActivity"/>
         <activity android:name=".DataBaseActivity">
         </activity>
+        <activity android:name=".StorageActivity">
+        </activity>
     </application>
 
 </manifest>

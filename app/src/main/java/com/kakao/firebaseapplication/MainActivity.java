@@ -18,6 +18,7 @@ public class MainActivity extends AppCompatActivity implements
 
         findViewById(R.id.emailButton).setOnClickListener(this);
         findViewById(R.id.databaseButton).setOnClickListener(this);
+        findViewById(R.id.storageButton).setOnClickListener(this);
 
     }
 
@@ -30,6 +31,9 @@ public class MainActivity extends AppCompatActivity implements
                 break;
             case R.id.databaseButton:
                 startActivity(new Intent(this, DataBaseActivity.class));
+                break;
+            case R.id.storageButton:
+                startActivity(new Intent(this, StorageActivity.class));
                 break;
         }
     }

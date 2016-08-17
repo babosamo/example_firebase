@@ -23,4 +23,10 @@
         android:layout_height="wrap_content"
         android:text="database"
         android:id="@+id/databaseButton"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="storage"
+        android:id="@+id/storageButton"/>
 </LinearLayout>
