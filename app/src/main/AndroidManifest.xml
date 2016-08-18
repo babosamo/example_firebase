@@ -20,6 +20,8 @@
         </activity>
         <activity android:name=".StorageActivity">
         </activity>
+        <activity android:name=".ConfigActivity">
+        </activity>
     </application>
 
 </manifest>

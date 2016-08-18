@@ -29,4 +29,10 @@
         android:layout_height="wrap_content"
         android:text="storage"
         android:id="@+id/storageButton"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="fetch config"
+        android:id="@+id/fetchConfigButton"/>
 </LinearLayout>

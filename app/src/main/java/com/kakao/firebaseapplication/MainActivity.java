@@ -8,8 +8,8 @@ import android.view.View;
 public class MainActivity extends AppCompatActivity implements
         View.OnClickListener {
 
-    private static final String TAG = "MainActivity";
 
+    private static final String TAG = "MainActivity";
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity implements
         findViewById(R.id.emailButton).setOnClickListener(this);
         findViewById(R.id.databaseButton).setOnClickListener(this);
         findViewById(R.id.storageButton).setOnClickListener(this);
-
+        findViewById(R.id.fetchConfigButton).setOnClickListener(this);
     }
 
     @Override
@@ -34,6 +34,9 @@ public class MainActivity extends AppCompatActivity implements
                 break;
             case R.id.storageButton:
                 startActivity(new Intent(this, StorageActivity.class));
+                break;
+            case R.id.fetchConfigButton:
+                startActivity(new Intent(this, ConfigActivity.class));
                 break;
         }
     }
